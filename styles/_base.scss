@@ -55,8 +55,8 @@ You probably don't need to make many changes to this file
 		body { background: $page-bkg; color: $page-txt; }
 
 		// Links
-		a:link, a:visited { color: $link-default; text-decoration: underline; }
-		a:hover, a:active, a:focus { color: $link-active; text-decoration: none; }
+		a:link, a:visited { color: $link-default-off; text-decoration: underline; }
+		a:hover, a:active, a:focus { color: $link-default-on; text-decoration: none; }
 	
 		// Hide these elements but keep them accessible
 		.access-hide { position: absolute; left: -999em; top: -999em; }
