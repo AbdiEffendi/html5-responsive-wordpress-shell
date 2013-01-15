@@ -79,16 +79,16 @@ function body_classes() {
     global $post;
 
  // echo some of these things
-    if (is_category()) { echo "page_category"," "; }
-        elseif (is_search()) { echo "page_search"," "; }
-        elseif (is_tag()) { echo "page_tag"," "; }
-        elseif (is_home()) { echo "page_home"," "; }
-        elseif (is_404()) { echo "page_404"," "; }
+    if (is_category()) { echo "page_category"." "; }
+        elseif (is_search()) { echo "page_search"." "; }
+        elseif (is_tag()) { echo "page_tag"." "; }
+        elseif (is_home()) { echo "page_home"." "; }
+        elseif (is_404()) { echo "page_404"." "; }
 
     // echo page_(page name)
     if( is_page()) {
         $pn = $post->post_name;
-        echo "page_".$pn;
+        echo "page_".$pn." ";
     }
 
     // echo parent_(parent name)
