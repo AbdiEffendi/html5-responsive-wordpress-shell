@@ -80,10 +80,10 @@ function body_classes() {
 
  // echo some of these things
     if (is_category()) { echo "page_category"." "; }
-        elseif (is_search()) { echo "page_search"." "; }
-        elseif (is_tag()) { echo "page_tag"." "; }
-        elseif (is_home()) { echo "page_home"." "; }
-        elseif (is_404()) { echo "page_404"." "; }
+    elseif (is_search()) { echo "page_search"." "; }
+    elseif (is_tag()) { echo "page_tag"." "; }
+    elseif (is_home()) { echo "page_home"." "; }
+    elseif (is_404()) { echo "page_404"." "; }
 
     // echo page_(page name)
     if( is_page()) {
@@ -101,11 +101,12 @@ function body_classes() {
 
     // echo template_(template name)
     $temp = get_page_template();
-    $path = pathinfo($temp);
-    $tmp = $path['filename'] . "." . $path['extension'];
-    $tn= str_replace(".php", "", $tmp);
-    echo "template_".$tn." ";
-
+    if ( $temp != null ) {
+        $path = pathinfo($temp);
+        $tmp = $path['filename'] . "." . $path['extension'];
+        $tn= str_replace(".php", "", $tmp);
+        echo "template_".$tn;
+    }
 }
 
 
