@@ -1,84 +1,34 @@
-/*--------------------------------------------------------------------------------------------------*/
-/* 100-480 media query */
-/*--------------------------------------------------------------------------------------------------*/
+/*
+We're using the method where you set up your styles to look good on very large screens then add in media queries to override styles as you move down in size as needed
+*/
 
-@media screen and (min-width: 100px) and (max-width: 480px) {
-	
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { @include alert("100-480"); }
 
-	/* add your styles here */
-
-} /* END: 100-480 media query - don't delete this bracket */
+// add in more MQ's here, the onec below are there as examples
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* 480-600 media query */
+/* under 660px */
 /*--------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 480px) and (max-width: 600px) {
-	
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { @include alert("480-600"); }
+@media screen and (max-width: 660px) {
 
-	/* add your styles here */
+body:before { @include alert("660 and below"); }
 
-} /* END: 480-600 media query - don't delete this bracket */
+// add your rules here
 
+} /* END: 600 media query - don't delete this bracket */
 
 /*--------------------------------------------------------------------------------------------------*/
-/* 600-750 media query */
+/* under 480px */
 /*--------------------------------------------------------------------------------------------------*/
 
-@media screen and (min-width: 600px) and (max-width: 750px) {
+@media screen and (max-width: 480px) {
 
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { @include alert("600-750"); }
+body:before { @include alert("480 and below"); }
 
-	/* add your styles here */
+// add your rules here
 
-} /* END: 600-750 media query - don't delete this bracket */
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* 750-980 media query */
-/*--------------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 750px) and (max-width: 980px) {
-
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { @include alert("750-980"); }
-
-	/* add your styles here */
-
-} /* END: 750-980 media query - don't delete this bracket */
+} /* END: 480 media query - don't delete this bracket */
 
 
-
-/*--------------------------------------------------------------------------------------------------*/
-/* 980-1200 media query */
-/*--------------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 980px) and (max-width: 1200px) {
-
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { @include alert("980-1200"); }
-
-	/* add your styles here */
-
-} /* END: 980-1200 media query - don't delete this bracket */
-
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* 1200+ media query */
-/*--------------------------------------------------------------------------------------------------*/
-
-@media screen and (min-width: 1200px) {
-
-	/* Shows media query size on the top of the browser window -- DELETE before making site live */
-	body:before { @include alert("1200 and up"); }
-
-	/* add your styles here */
-
-} /* END: 1200+ media query - don't delete this bracket */
+/*------------------------END Media Queries-------------------------------*/
