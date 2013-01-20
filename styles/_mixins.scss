@@ -18,3 +18,9 @@
 	@include rounded(2em);
 }
 
+// accessible hidden content
+@mixin hide() {
+	position: absolute;
+	left: -999em;
+	top: -999em;
+}
