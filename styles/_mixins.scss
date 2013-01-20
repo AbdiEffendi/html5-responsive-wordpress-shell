@@ -16,6 +16,8 @@
 	background: lighten($header-bkg, 20%);
 	padding: .2em 1.5em;
 	@include rounded(2em);
+	font-family: helvetica, sans-serif;
+	font-size: 12px;
 }
 
 // accessible hidden content
