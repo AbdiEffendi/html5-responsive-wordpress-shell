@@ -3,7 +3,8 @@ We're using the method where you set up your styles to look good on very large s
 */
 
 
-// add in more MQ's here, the onec below are there as examples
+// add in more MQ's below, here's a few examples
+
 
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -18,6 +19,8 @@ body:before { @include alert("660 and below"); }
 
 } /* END: 600 media query - don't delete this bracket */
 
+
+
 /*--------------------------------------------------------------------------------------------------*/
 /* under 480px */
 /*--------------------------------------------------------------------------------------------------*/
@@ -29,6 +32,7 @@ body:before { @include alert("480 and below"); }
 // add your rules here
 
 } /* END: 480 media query - don't delete this bracket */
+
 
 
 /*------------------------END Media Queries-------------------------------*/
