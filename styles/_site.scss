@@ -3,6 +3,16 @@ site.scss is for look and feel
 do not add layout here, add layout to responsive.scss
 */
 
+	/* The BASICS */
+
+		// Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same
+		html { background: $page-bkg; color: $page-txt; }
+		body { background: $page-bkg; color: $page-txt; }
+
+		// Links
+		a:link, a:visited { color: $link-default-off; text-decoration: underline; }
+		a:hover, a:active, a:focus { color: $link-default-on; text-decoration: none; }
+
 
 	/*-- FORMS --*/
 		.search-form input[type='text'] { width: 10em; }

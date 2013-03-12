@@ -50,21 +50,10 @@ You probably don't need to make many changes to this file
 		.js .js-ind, .js .hide { display: none; }
 
 
-	/*--- GLOBAL STYLES ---*/
+	/*--- UTILITY ---*/
 
-		// Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same
-		html { background: $page-bkg; color: $page-txt; }
-		body { background: $page-bkg; color: $page-txt; }
-
-		// Links
-		a:link, a:visited { color: $link-default-off; text-decoration: underline; }
-		a:hover, a:active, a:focus { color: $link-default-on; text-decoration: none; }
-	
 		// Hide these elements but keep them accessible
 		.access-hide { @include hide(); }
-
-
-	/*--- UTILITY ---*/
 
 		// Clear Fixes - two methods, clear-fix is attached to the element you want to clear, .clear-all you can attach to a hr or br tag to clear the item before it as a last resort when you're in a hurry
 		.clear-fix:before,
