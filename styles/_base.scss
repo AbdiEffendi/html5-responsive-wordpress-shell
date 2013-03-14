@@ -52,9 +52,6 @@ You probably don't need to make many changes to this file
 
 	/*--- UTILITY ---*/
 
-		// Hide these elements but keep them accessible
-		.access-hide { @include hide(); }
-
 		// Clear Fixes - two methods, clear-fix is attached to the element you want to clear, .clear-all you can attach to a hr or br tag to clear the item before it as a last resort when you're in a hurry
 		.clear-fix:before,
 		.clear-fix:after { content: ""; display: table; } 
