@@ -63,5 +63,8 @@ You probably don't need to make many changes to this file
 		.sys { text-align: left }
 		.warn { }
 
+		// Hide these elements but keep them accessible
+		.access-hide { @include hide(); }
+
 
 

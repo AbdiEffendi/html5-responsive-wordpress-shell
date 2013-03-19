@@ -1,17 +1,14 @@
 /*
-site.scss is for look and feel
-do not add layout here, add layout to responsive.scss
+Base mobile stacked layout and overall look and feel
+Desktop and other layouts go in responsive.scss
 */
+
 
 	/* The BASICS */
 
 		// Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same
 		html { background: $page-bkg; color: $page-txt; }
-		body { background: $page-bkg; color: $page-txt; }
-
-		// Hide these elements but keep them accessible
-		.access-hide { @include hide(); }
-	
+		body { background: $page-bkg; color: $page-txt; }	
 	
 	/*--- PAGE WRAPPER ---*/
 		.page-wrapper { padding: 0 5%; }
