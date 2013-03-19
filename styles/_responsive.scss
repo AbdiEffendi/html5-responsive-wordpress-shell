@@ -1,38 +1,38 @@
 /*
-We're using the method where you set up your styles to look good on very large screens then add in media queries to override styles as you move down in size as needed
+
+Mobile First Approach
+
 */
 
-
-// add in more MQ's below, here's a few examples
-
-
-
 /*--------------------------------------------------------------------------------------------------*/
-/* under 660px */
+/* BEGIN: Break 1 */
 /*--------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 660px) {
+@media screen and (min-width: 20em) {
 
-body:before { @include alert("660 and below"); }
+body:before { @include alert("Break 1"); }
 
 // add your rules here
 
-} /* END: 600 media query - don't delete this bracket */
+/*--------------------------------------------------------------------------------------------------*/
+} /* END: Break 1 - don't delete this bracket */
+/*--------------------------------------------------------------------------------------------------*/
 
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* under 480px */
+/* BEGIN: Break 2 */
 /*--------------------------------------------------------------------------------------------------*/
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 30em) {
 
-body:before { @include alert("480 and below"); }
+body:before { @include alert("Break 2"); }
+
+
 
 // add your rules here
 
-} /* END: 480 media query - don't delete this bracket */
+/*--------------------------------------------------------------------------------------------------*/
+} /* END: Break 2 - don't delete this bracket */
+/*--------------------------------------------------------------------------------------------------*/
 
-
-
-/*------------------------END Media Queries-------------------------------*/
