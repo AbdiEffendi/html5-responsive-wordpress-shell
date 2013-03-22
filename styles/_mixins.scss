@@ -26,3 +26,10 @@
 	left: -999em;
 	top: -999em;
 }
+
+// unhide accessible content
+@mixin unhide() {
+	position: static;
+}
+
+
