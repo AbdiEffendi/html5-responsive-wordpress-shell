@@ -10,11 +10,12 @@ Mobile First Approach
 /*--------------------------------------------------------------------------------------------------*/
 /* BEGIN: Break 1 */
 @media screen and (min-width: 20em) {
+body:before { @include alert("Break 1"); } // comment out this line before going live
 /*--------------------------------------------------------------------------------------------------*/
 
-body:before { @include alert("Break 1"); }
 
 // add your rules here
+
 
 /*--------------------------------------------------------------------------------------------------*/
 } /* END: Break 1 - don't delete this bracket */
@@ -28,11 +29,12 @@ body:before { @include alert("Break 1"); }
 /*--------------------------------------------------------------------------------------------------*/
 /* BEGIN: Break 2 */
 @media screen and (min-width: 30em) {
+body:before { @include alert("Break 2"); } // comment out this line before going live
 /*--------------------------------------------------------------------------------------------------*/
 
-body:before { @include alert("Break 2"); }
 
 // add your rules here
+
 
 /*--------------------------------------------------------------------------------------------------*/
 } /* END: Break 2 - don't delete this bracket */

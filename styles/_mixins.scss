@@ -32,4 +32,15 @@
 	position: static;
 }
 
+// Shorthand mixin. Supports multiple parentheses-deliminated values for each variable.
+// Example: @include transition (all, 2.0s, ease-in-out);
+//          @include transition ((opacity, width), (1.0s, 2.0s), ease-in, (0, 2s));
+//          @include transition ($property:(opacity, width), $delay: (1.5s, 2.5s));
 
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
