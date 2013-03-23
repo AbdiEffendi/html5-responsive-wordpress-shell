@@ -1,10 +1,14 @@
 /*
-Base mobile stacked layout and overall look and feel
-Desktop and other layouts go in responsive.scss
+These are the base styles that get applied before responsive CSS is added
+It should be a basic stacked layout which could work as a fallback for old IE and crap phones
+Add on top of that in responsive.scss
 */
 
 
-	/* The BASICS */
+
+
+/* ::: BASICS ::::::::::::::::::::::::::::::::::::::::: */
+
 
 		// Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same
 		html { background: $page-bkg; color: $page-txt; }
@@ -12,6 +16,11 @@ Desktop and other layouts go in responsive.scss
 	
 	/*--- PAGE WRAPPER ---*/
 		.page-wrapper { padding: 0 5%; }
+
+
+
+
+/* ::: PAGE DIVISIONS ::::::::::::::::::::::::::::::::: */
 
 
 	/*--- SITE HEADER ---*/
