@@ -59,7 +59,7 @@ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 	<!--BEGIN: page~wrapper-->
 	<div class="page-wrapper">
 			
-		<header class="site-header" role="banner">
+		<header class="site-header row-site" role="banner">
 	
 			<hgroup>
 				<h1 class="site-title"><?php if(!is_home()) { wp_title(''); echo " :: "; } ?><a href="/"><?php bloginfo('name'); ?></a></h1>
