@@ -20,11 +20,9 @@
 	font-size: 12px;
 }
 
-// accessible hidden content
+// accessible hidden content -- http://shoptalkshow.com/episodes/058-with-derek-featherstone/ (skip to 32 minutes)
 @mixin hide() {
-	position: absolute;
-	left: -999em;
-	top: -999em;
+	display: none;
 }
 
 // unhide accessible content

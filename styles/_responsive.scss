@@ -5,33 +5,15 @@ RESPONSIVE STYLES
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* BEGIN: mobile specific styles */
-@media screen and (min-width: 1em) {
-body:before { @include alert("mobile specific styles"); } // delete this before going live
-/*--------------------------*/
-
-	// rows are used to add a width to containers, don't style these in the base keep them in responsive.scss
-	.row-site { width: 80%; margin: 0 auto; }
-	.row-nav { width: 90%; margin: 0 auto; }
-
-/*--------------------------*/
-} /* END: mobile specific styles - don't delete this bracket */
-/*--------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-/*--------------------------------------------------------------------------------------------------*/
-/* BEGIN: Break 1 */
+/* BEGIN: Random Example Breakpoint */
 @media screen and (min-width: 20em) {
-body:before { @include alert("Break 1"); } // comment out this line before going live
+body:before { @include alert("Random Example Breakpoint"); } // comment out this line before going live
 /*--------------------------*/
 
 	// add your rules here
 
 /*--------------------------*/
-} /* END: Break 1 - don't delete this bracket */
+} /* END: Random Example Breakpoint */
 /*--------------------------------------------------------------------------------------------------*/
 
 
@@ -39,7 +21,7 @@ body:before { @include alert("Break 1"); } // comment out this line before going
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* BEGIN: Example Breakpoint that gets applied to everything smaller than desktop */
+/* BEGIN: Mobile & Tablet only CSS -- gets applied to everything smaller than desktop */
 @media screen and (max-width: 65em) {
 /*--------------------------*/
 
@@ -54,15 +36,15 @@ body:before { @include alert("Break 1"); } // comment out this line before going
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* BEGIN: Break 2 */
+/* BEGIN: Desktop */
 @media screen and (min-width: 30em) {
-body:before { @include alert("Break 2"); } // comment out this line before going live
+body:before { @include alert("Desktop Styles"); } // comment out this line before going live
 /*--------------------------*/
 
 // add your rules here
 
 /*--------------------------*/
-} /* END: Break 2 - don't delete this bracket */
+} /* END: Desktop */
 /*--------------------------------------------------------------------------------------------------*/
 
 
