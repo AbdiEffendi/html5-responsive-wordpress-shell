@@ -1,5 +1,5 @@
 /*
-Mobile First Approach
+RESPONSIVE STYLES
 */
 
 
@@ -13,7 +13,6 @@ body:before { @include alert("mobile specific styles"); } // delete this before 
 	// rows are used to add a width to containers, don't style these in the base keep them in responsive.scss
 	.row-site { width: 80%; margin: 0 auto; }
 	.row-nav { width: 90%; margin: 0 auto; }
-
 
 /*--------------------------*/
 } /* END: mobile specific styles - don't delete this bracket */
@@ -29,13 +28,25 @@ body:before { @include alert("mobile specific styles"); } // delete this before 
 body:before { @include alert("Break 1"); } // comment out this line before going live
 /*--------------------------*/
 
-
-
-// add your rules here
-
+	// add your rules here
 
 /*--------------------------*/
 } /* END: Break 1 - don't delete this bracket */
+/*--------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* BEGIN: Example Breakpoint that gets applied to everything smaller than desktop */
+@media screen and (max-width: 65em) {
+/*--------------------------*/
+
+// add your rules here, for instance mobile nav styles that get applied to phones and tablets could go here
+
+/*--------------------------*/
+} /* END: not desktop - don't delete this bracket */
 /*--------------------------------------------------------------------------------------------------*/
 
 
@@ -48,9 +59,7 @@ body:before { @include alert("Break 1"); } // comment out this line before going
 body:before { @include alert("Break 2"); } // comment out this line before going live
 /*--------------------------*/
 
-
 // add your rules here
-
 
 /*--------------------------*/
 } /* END: Break 2 - don't delete this bracket */
