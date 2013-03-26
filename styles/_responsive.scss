@@ -8,11 +8,11 @@ RESPONSIVE STYLES
 /* BEGIN: Random Example Breakpoint */
 @media screen and (min-width: 20em) {
 body:before { @include alert("Random Example Breakpoint"); } // comment out this line before going live
-/*--------------------------*/
+
 
 	// add your rules here
 
-/*--------------------------*/
+
 } /* END: Random Example Breakpoint */
 /*--------------------------------------------------------------------------------------------------*/
 
@@ -23,11 +23,11 @@ body:before { @include alert("Random Example Breakpoint"); } // comment out this
 /*--------------------------------------------------------------------------------------------------*/
 /* BEGIN: Mobile & Tablet only CSS -- gets applied to everything smaller than desktop */
 @media screen and (max-width: 65em) {
-/*--------------------------*/
 
-// add your rules here, for instance mobile nav styles that get applied to phones and tablets could go here
 
-/*--------------------------*/
+	// add your rules here, for instance mobile nav styles that get applied to phones and tablets could go here
+
+
 } /* END: not desktop - don't delete this bracket */
 /*--------------------------------------------------------------------------------------------------*/
 
@@ -39,11 +39,11 @@ body:before { @include alert("Random Example Breakpoint"); } // comment out this
 /* BEGIN: Desktop */
 @media screen and (min-width: 30em) {
 body:before { @include alert("Desktop Styles"); } // comment out this line before going live
-/*--------------------------*/
 
-// add your rules here
 
-/*--------------------------*/
+	// add your rules here
+
+
 } /* END: Desktop */
 /*--------------------------------------------------------------------------------------------------*/
 
