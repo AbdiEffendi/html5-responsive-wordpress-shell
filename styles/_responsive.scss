@@ -3,49 +3,64 @@ RESPONSIVE STYLES
 */
 
 
-
 /*--------------------------------------------------------------------------------------------------*/
-/* BEGIN: Random Example Breakpoint */
-@media screen and (min-width: 20em) {
-body:before { @include alert("Random Example Breakpoint"); } // comment out this line before going live
+/* BEGIN: up to tablet */ @media screen and (max-width: 40em) {
 
 
-	// add your rules here
+	// body:before { @include alert("up to tablet"); } // uncomment this line to get an alert showing this meda query
 
 
-} /* END: Random Example Breakpoint */
+} /* END: up to tablet */
 /*--------------------------------------------------------------------------------------------------*/
 
 
 
-
-
 /*--------------------------------------------------------------------------------------------------*/
-/* BEGIN: Mobile & Tablet only CSS -- gets applied to everything smaller than desktop */
-@media screen and (max-width: 65em) {
+/* BEGIN: tablet and smaller */ @media screen and (min-width: 40em) {
 
 
 	// add your rules here, for instance mobile nav styles that get applied to phones and tablets could go here
 
 
-} /* END: not desktop - don't delete this bracket */
+} /* END: tablet and smaller */
 /*--------------------------------------------------------------------------------------------------*/
 
 
 
+/*--------------------------------------------------------------------------------------------------*/
+/* BEGIN: larger than mobile but smaller than desktop */ @media screen and (min-width: 40em) and (max-width: 980px){
+
+
+	// body:before { @include alert("larger than mobile but smaller than desktop"); } // uncomment this line to get an alert showing this meda query
+
+
+} /* END: larger than mobile but smaller than desktop
+/*--------------------------------------------------------------------------------------------------*/
+
 
 
 /*--------------------------------------------------------------------------------------------------*/
-/* BEGIN: Desktop */
-@media screen and (min-width: 30em) {
-body:before { @include alert("Desktop Styles"); } // comment out this line before going live
+/* BEGIN: Smaller than desktop */ @media screen and (max-width: 980px) {
 
 
-	// add your rules here
+	// body:before { @include alert("smaller than desktop"); } // uncomment this line to get an alert showing this meda query
 
 
-} /* END: Desktop */
+} /* END: Smaller than desktop */
 /*--------------------------------------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/* BEGIN: desktop and above */ @media screen and (min-width: 980px) {
+	
+
+	// body:before { @include alert("desktop and above"); } // uncomment this line to get an alert showing this meda query
+
+
+} /* END: desktop and above */ 
+/*--------------------------------------------------------------------------------------------------*/
+
 
 
 
