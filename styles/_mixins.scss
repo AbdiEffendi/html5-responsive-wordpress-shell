@@ -10,7 +10,7 @@
 @mixin alert($statement) {
 	content: $statement;
 	right: .3em;
-	position: absolute;
+	position: fixed;
 	top: .3em;
 	z-index: 999;
 	background: lighten($header-bkg, 20%);
