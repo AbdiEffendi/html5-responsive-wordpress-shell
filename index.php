@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<!--BEGIN: sidebar~main-->
+<!--BEGIN: Sidebar Main-->
 <?php // to disable this sidebar on a page by page basis just add a custom field to your page or post of disableSidebar = true
 $disableSidebar = get_post_meta($post->ID, 'disableSidebar', $single = true);
 if ($disableSidebar !== 'true'): ?>
@@ -11,9 +11,9 @@ if ($disableSidebar !== 'true'): ?>
 </aside>
 
 <?php endif; ?>
-<!--END: sidebar~main-->
+<!--END: Sidebar Main-->
 
-<!--BEGIN: content div-->
+<!--BEGIN: Content div-->
 <section class="main-content clear-fix row-site" role="main">
 
 	<h1 class="access-hide">Latest Posts</h1>

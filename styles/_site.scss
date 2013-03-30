@@ -5,23 +5,26 @@ Add on top of that in responsive.scss
 */
 
 
-
-
 /* ::: BASICS ::::::::::::::::::::::::::::::::::::::::: */
 
-
-		// Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same
+	/*--- Set the background and font color for the html and body, if you don't have a different bkg for the body set both to be the same ---*/
 		html { background: $page-bkg; color: $page-txt; }
 		body { background: $page-bkg; color: $page-txt; }	
+
+		/* Tags */
+		pre { background-color: $code-bkg; margin: 2em; }
+
+		/* Lists */
+		ol {}
+		ol ol { list-style-type: lower-alpha; margin: .2em 2em .8em 2em; }
+		ul ul { margin: .2em 2em .8em 2em; }
+
 	
 	/*--- PAGE WRAPPER ---*/
 		.page-wrapper { padding: 0 5%; }
 
 
-
-
 /* ::: PAGE DIVISIONS ::::::::::::::::::::::::::::::::: */
-
 
 	/*--- SITE HEADER ---*/
 	
@@ -29,14 +32,14 @@ Add on top of that in responsive.scss
 		.site-header .site-title { }
 		.site-header .site-description { }	
 
-		// Nav
+		/* Nav */
 		.main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 	
-		// Nav Links
+		/* Nav Links */
 		.main-nav a:link, .main-nav a:visited  { color: darken($nav-up, 40%); background: $nav-up; }
 		.main-nav a:hover, .main-nav a:active, .main-nav a:focus { color: darken($nav-dn, 20%); background: $nav-dn; text-decoration: underline; }
 
-		// Down States
+		/* Down States */
 		.main-nav .current_page_item a { color: lighten($nav-current, 40%) !important; background: $nav-current; cursor: default; }
 	
 		
@@ -45,20 +48,20 @@ Add on top of that in responsive.scss
 		.main-content { }
 		.main-content em { font-style: italic; }
 		
-		// Page Nav
+		/* Page Nav */
 		.page-nav a { float: right; padding: .5em 2em; margin: 1em; }
 
-		// Page
+		/* Page */
 		.page {}
 
-		// Posts
+		/* Posts */
 		.post {}
 
-		// Single
+		/* Single */
 		.single-template {}
 
-			// Comments use Intense Debate, Disqus or LiveFyre
-			.post-meta-data	{ margin: 1em 0; }
+
+	/*--- NO SOMMENT STYLES: We always use a plugin for comments; either disqus, livefyre, or intense debate ---*/
 	
 	
 	/*--- SIDEBAR - MAIN ---*/
@@ -76,7 +79,7 @@ Add on top of that in responsive.scss
 
 		.footer { clear: both; padding-bottom: 20px; text-align: right; }
 			
-		// Credit
+		/* Credit */
 		.footer .site-credits a { letter-spacing: 1px; }
 
 

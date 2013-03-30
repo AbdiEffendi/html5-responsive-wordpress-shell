@@ -1,10 +1,16 @@
 /*--- LISTS ---*/
 
-	// Lists without bullets
+	/* Horiz List */
+	.horiz-list { display: inline-block; }
+	.horiz-list ul { display: inline-block; }
+	.horiz-list ul ul { display: none; }
+	.horiz-list li { display: inline-block; }
+
+	/* Lists without bullets */
 	.no-bullet { list-style-type: none; margin-bottom: 2em; }
 	.no-bullet li { margin-bottom: .5em; }
 
-	// Bullet Lists: Nicer formatting for a bulleted list
+	/* Bullet Lists: Nicer formatting for a bulleted list */
 	.bullet-list { margin: 1em 0 2em 0; line-height: 150%; }
 	.bullet-list li { margin: 0 2em 1em 2em; list-style-type: square; }
 	.bullet-list li ul { margin: .5em 0 1.5em 0; }

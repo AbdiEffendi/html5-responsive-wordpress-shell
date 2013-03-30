@@ -1,8 +1,12 @@
-/*--- Load Fonts ---*/
+//::: DEFINE FONT STYLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+/*--- Load Font Face Fonts ---*/
+
 	@font-face {font-family: 'StMarieThin'; src: url('./fonts/StMarie-Thin-webfont.eot'); src: url('./fonts/StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/StMarie-Thin-webfont.woff') format('woff'), url('./fonts/StMarie-Thin-webfont.ttf') format('truetype'), url('./fonts/StMarie-Thin-webfont.svg#StMarieThin') format('svg'); font-weight: normal; font-style: normal; }
 	
 
-/*--- Default Font Stacks ---*/
+/*--- Default font stacks for this site ---*/
+
 	@mixin monospace() {
 		font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 	}
@@ -12,20 +16,20 @@
 	}
 
 	@mixin sans() {
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+		font-weight: 300;
 	}
 
 
 /*--- Display Fonts ~ try to use one or two at max in your design. ---*/
+
 	@mixin stmarie() {
 		font-family: 'StMarieThin', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', helvetica, sans-serif;
 		font-weight: normal;
 	}
 
 
-
-
-
+//::: APPLY FONT STYLES ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 /*--- Base Font Settings ---*/
 	body {
@@ -51,3 +55,8 @@
 
 	h1 { font-size: 2.5em; }
 	h2 { font-size: 1.7em; }
+
+
+
+
+
