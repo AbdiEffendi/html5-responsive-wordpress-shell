@@ -1,33 +1,44 @@
 /*--- Load Fonts ---*/
 	@font-face {font-family: 'StMarieThin'; src: url('./fonts/StMarie-Thin-webfont.eot'); src: url('./fonts/StMarie-Thin-webfont.eot?#iefix') format('embedded-opentype'), url('./fonts/StMarie-Thin-webfont.woff') format('woff'), url('./fonts/StMarie-Thin-webfont.ttf') format('truetype'), url('./fonts/StMarie-Thin-webfont.svg#StMarieThin') format('svg'); font-weight: normal; font-style: normal; }
-
-
-/*--- Base Font Settings ---*/
-	body {
-		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-		font-size: 14px; // base font size
-		font-weight: 300;
-		line-height: 1.5;
-	}
 	
 
 /*--- Default Font Stacks ---*/
-	.serif { font-family: Baskerville, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", times, serif; } /*cambria, cochin ??*/
-	.monospace { font-family: 'courier new', courier, Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace; }
-	.sans { font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; }
+	@mixin monospace() {
+		font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+	}
+
+	@mixin serif() {
+		font-family: Baskerville, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", times, serif; // cambria, cochin ??
+	}
+
+	@mixin sans() {
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300;
+	}
 
 
-/*--- Font Styles ---*/
+/*--- Display Fonts ~ try to use one or two at max in your design. ---*/
 	@mixin stmarie() {
 		font-family: 'StMarieThin', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', helvetica, sans-serif;
 		font-weight: normal;
 	}
 
 
+
+
+
+
+/*--- Base Font Settings ---*/
+	body {
+		@include sans();
+		font-size: 14px; // base font size
+		font-weight: 300;
+		line-height: 1.5;
+	}
+
 /*--- Links ---*/
 
-		a:link, a:visited { color: $link-default-off; text-decoration: underline; }
-		a:hover, a:active, a:focus { color: $link-default-on; text-decoration: none; }
+	a:link, a:visited { color: $link-default-off; text-decoration: underline; }
+	a:hover, a:active, a:focus { color: $link-default-on; text-decoration: none; }
 
 
 /*--- Headings ---*/
