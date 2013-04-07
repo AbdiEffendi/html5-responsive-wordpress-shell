@@ -20,7 +20,7 @@ if ($disableSidebar !== 'true'): ?>
 <!--END: sidebar~main-->
 
 <!--BEGIN: content div-->
-<div class="main-content clear-fix" role="main">
+<div class="content-main clear-fix" role="main">
 
 	<?php
 	

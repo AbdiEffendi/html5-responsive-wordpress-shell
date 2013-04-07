@@ -14,7 +14,7 @@ if ($disableSidebar !== 'true'): ?>
 <!--END: sidebar~main-->
 
 <!--BEGIN: Content-->
-<div class="main-content clear-fix" role="main">
+<div class="content-main clear-fix" role="main">
 	
 	<header>
 		<h1>Search Results</h1>

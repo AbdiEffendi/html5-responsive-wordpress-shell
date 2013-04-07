@@ -14,7 +14,7 @@ if ($disableSidebar !== 'true'): ?>
 <!--END: Sidebar Main-->
 
 <!--BEGIN: Content div-->
-<section class="main-content clear-fix row-site" role="main">
+<section class="content-main clear-fix row-site" role="main">
 
 	<h1 class="access-hide">Latest Posts</h1>
 	

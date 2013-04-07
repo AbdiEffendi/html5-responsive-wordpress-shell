@@ -33,20 +33,20 @@ Add on top of that in responsive.scss
 		.site-header .site-description { }	
 
 		/* Nav */
-		.main-nav a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+		.nav-menu a { font-size: 1.2em; text-decoration: none; display: inline-block; line-height: 1.8em; margin: 0 3px 3px 0; padding: 1em 2em; -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
 	
 		/* Nav Links */
-		.main-nav a:link, .main-nav a:visited  { color: darken($nav-up, 40%); background: $nav-up; }
-		.main-nav a:hover, .main-nav a:active, .main-nav a:focus { color: darken($nav-dn, 20%); background: $nav-dn; text-decoration: underline; }
+		.nav-menu a:link, .nav-menu a:visited  { color: darken($nav-up, 40%); background: $nav-up; }
+		.nav-menu a:hover, .nav-menu a:active, .nav-menu a:focus { color: darken($nav-dn, 20%); background: $nav-dn; text-decoration: underline; }
 
 		/* Down States */
-		.main-nav .current_page_item a { color: lighten($nav-current, 40%) !important; background: $nav-current; cursor: default; }
+		.nav-menu .current_page_item a { color: lighten($nav-current, 40%) !important; background: $nav-current; cursor: default; }
 	
 		
 	/*--- CONTENT AREA ---*/
 	
-		.main-content { }
-		.main-content em { font-style: italic; }
+		.content-main { }
+		.content-main em { font-style: italic; }
 		
 		/* Page Nav */
 		.page-nav a { float: right; padding: .5em 2em; margin: 1em; }
