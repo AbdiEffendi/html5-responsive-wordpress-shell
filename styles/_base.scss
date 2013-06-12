@@ -15,6 +15,8 @@ You probably don't need to make many changes to this file
 	/*--- NATURAL BOX LAYOUT MODEL for all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/ ---*/
 		* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+	/*--- Removes inner padding and border in Firefox 4+ to make heights consistant across webkit and FF -- thanks Adrian! */
+		button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
 
 	/*--- WordPress ---*/
 		
