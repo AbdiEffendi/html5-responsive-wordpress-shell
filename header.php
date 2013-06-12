@@ -56,7 +56,7 @@ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 
 	<!--div class="preloader"></div-->
 
-	<!--BEGIN: page~wrapper-->
+	<!--BEGIN: PAGE WRAPPER-->
 	<div class="page-wrapper">
 
 		<!--TOP BAR-->
@@ -73,7 +73,7 @@ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
 			</hgroup>
 		</header>
 
-		<!-- MAIN NAV: To make the menu vertical instead of horizontal remove the menu_class of horiz-list -->
+		<!--MAIN NAV: To make the menu vertical instead of horizontal remove the menu_class of horiz-list-->
 		<nav class="nav-menu" role="navigation">
 			<h1 class="access-hide">Main Navigation</h1>
 			<?php wp_nav_menu(array('menu' => 'mainNav', 'menu_class' => 'horiz-list')); // create the mainNav menu inside Appearance menus and go to town -- for more on menus see: http://templatic.com/news/wordpress-3-0-menu-management ?>
